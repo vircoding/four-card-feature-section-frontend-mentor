@@ -1,0 +1,118 @@
+/* Google Fonts https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/* Weights: 200, 400, 600 */
+
+/* Custom Properties */
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --poppins: 'Poppins', sans-serif;
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 75px 33px;
+    background-color: var(--very-light-gray);
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+/* Main */
+.main-sub {
+    color: var(--very-dark-blue);
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.main-title {
+    color: var(--very-dark-blue);
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.main-paragraph {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 75px;
+}
+
+.main-cards {
+    display: grid;
+    gap: 25px;
+}
+
+.cards-item {
+    height: 220px;
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 1px 10px 10px hsl(229, 40%, 94%);
+}
+
+.card-border {
+    border-top: 4px solid;
+}
+
+.supervisorCard {
+    border-top-color: var(--cyan);
+}
+
+.teamBuilderCard {
+    border-color: var(--red);
+}
+
+.karmaCard {
+    border-color: var(--orange);
+}
+
+.calculatorCard {
+    border-color: var(--blue);
+}
+
+.card-info {
+    padding: 30px;
+}
+
+.info-title {
+    color: var(--very-dark-blue);
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.info-paragraph {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* Media Queries */
+@media (min-width: 720px) {
+    body {
+        background-color: #000;
+    }
+
+    .cards-item {
+        height: 220px;
+    }
+}
